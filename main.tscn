@@ -1,0 +1,41 @@
+[gd_scene load_steps=2 format=3 uid="uid://haven94run"]
+
+[ext_resource type="Script" path="res://main.gd" id="1_main"]
+
+[node name="Main" type="Node2D"]
+script = ExtResource("1_main")
+
+[node name="HUD" type="CanvasLayer" parent="."]
+
+[node name="ScoreLabel" type="Label" parent="HUD"]
+offset_left = 16.0
+offset_top = 10.0
+offset_right = 480.0
+offset_bottom = 42.0
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 8
+theme_override_font_sizes/font_size = 22
+text = "Score: 0"
+
+[node name="LivesLabel" type="Label" parent="HUD"]
+offset_left = 500.0
+offset_top = 10.0
+offset_right = 704.0
+offset_bottom = 42.0
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 8
+theme_override_font_sizes/font_size = 22
+text = "Lives: 3"
+horizontal_alignment = 2
+
+[node name="CenterLabel" type="Label" parent="HUD"]
+offset_left = 36.0
+offset_top = 168.0
+offset_right = 684.0
+offset_bottom = 380.0
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 10
+theme_override_font_sizes/font_size = 26
+text = ""
+horizontal_alignment = 1
+autowrap_mode = 2
